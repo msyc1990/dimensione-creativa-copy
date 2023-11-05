@@ -47,7 +47,7 @@
 
     .image {
         position: absolute;
-        bottom: 8%;
+        bottom: 10%;
         left: -8%;
         width: 30%;
         min-width: 150px;
@@ -68,7 +68,7 @@
 
     .reverse {
         left: unset;
-        right: 8%;
+        right: -2%;
     }
 
     .personInfo {
