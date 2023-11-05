@@ -1,0 +1,123 @@
+.wrapper {
+    position: relative;
+}
+
+.container {
+    width: calc(100% * 0.85);
+    margin: 12rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4rem;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.people {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    align-items: center;
+}
+
+.person {
+    width: 75%;
+    position: relative;
+    padding: 1.8rem;
+    border-radius: 20px;
+    background-color: #0700ff;
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width: 680px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        position: absolute;
+        bottom: 8%;
+        left: -8%;
+        width: 30%;
+        min-width: 150px;
+        aspect-ratio: 280 / 312;
+        object-fit: cover;
+        border-radius: 16px;
+        object-position: top;
+
+        @media (max-width: 680px) {
+            position: relative;
+            bottom: unset;
+            left: unset !important;
+            right: unset !important;
+            top: -10rem;
+            width: 85%;
+        }
+    }
+
+    .reverse {
+        left: unset;
+        right: 8%;
+    }
+
+    .personInfo {
+        width: calc(100% - 30% + 4%);
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 680px) {
+            flex-direction: column;
+            width: auto;
+            margin-left: 0;
+        }
+    }
+
+    .personInfo.reverseInfo {
+        margin-left: 5%;
+    }
+
+}
+li {
+    list-style-type: disc;
+}
+.linkedIn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    
+}
+
+.icon {
+    width: 20%;
+    margin-right: 10%;
+    padding: 1rem;
+
+    @media (max-width: 680px) {
+        float: right;
+    }
+
+    svg {
+        width: 100%;
+    }
+
+}
+
+.icon.reverseIcon {
+    margin-left: unset;
+    margin-right: 20%;
+}
+

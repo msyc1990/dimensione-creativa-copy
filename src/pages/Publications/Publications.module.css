@@ -1,0 +1,49 @@
+.container {
+    margin-bottom: 30rem;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 5rem 3rem;
+
+    > p {
+        font-size: 5.6rem;
+        line-height: 7.6rem;
+    }
+}
+
+.publications {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.publication {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > .imgCard {
+        border-radius: 10px;
+    }
+}
+
+.description {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    > p {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    > svg {
+        flex-shrink: 0;
+    }
+}

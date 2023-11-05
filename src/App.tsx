@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+ import Header from "./components/Header/Header";
+ import Introduction from "./pages/Introduction/Introduction";
+ import ClientFeedback from "./pages/ClientFeedback/ClientFeedback";
+ import FeaturedVideo from "./pages/FeaturedVideo/FeaturedVideo";
+ import Partners from "./pages/Partners/Partners";
+ import Publications from "./pages/Publications/Publications";
+ import Statistis from "./pages/Statistics/Statistis";
+ import QuoteSection from "./pages/QuoteSection/QuoteSection";
+ import MeetTheDuo from "./pages/MeetTheDuo/MeetTheDuo";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Introduction />
+      <FeaturedVideo />
+      <ClientFeedback />
+      <Partners />
+      <Publications />
+      <Statistis />
+      <QuoteSection />
+      <MeetTheDuo />
+    </>
   );
 }
 

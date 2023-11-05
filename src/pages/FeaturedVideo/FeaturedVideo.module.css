@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    margin: 10rem auto;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.video {
+    background-color: theme(colors.white.content);
+    border-radius: 30px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: theme(colors.black.text);
+}

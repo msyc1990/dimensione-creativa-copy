@@ -1,0 +1,17 @@
+.container {
+    width: calc(100% * 0.85);
+    margin: 3rem auto;
+    padding: 0 4rem;
+}
+
+.quoteContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 700px;
+}
