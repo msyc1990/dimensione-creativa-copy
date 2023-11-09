@@ -11,7 +11,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media only screen and (max-width: 1250px) {
+
+        @media (max-width: 1250px) {
             width: 100%;
         }
         
@@ -22,7 +23,7 @@
         align-items: center;
         font-family: 'Poppins', sans-serif;
 
-        @media only screen and (max-width: 1250px) {
+        @media (max-width: 1250px) {
             display: none;
         }
 
@@ -36,6 +37,10 @@
 
         >.link:active {
             background-color: blue;
+        }
+
+        >.link:hover {
+            text-shadow: 0 2px 6px theme(colors.blue.highlight);
         }
     }
 
@@ -60,12 +65,12 @@
     .menuIcon {
         cursor: pointer;
         display: none;
-        @media only screen and (max-width: 1250px) {
+        @media (max-width: 1250px) {
             display: block;
         }
     }
 
-    @media only screen and (max-width: 1400px) {
+    @media (max-width: 1400px) {
         flex-direction: column;
     }
 }

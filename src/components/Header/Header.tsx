@@ -2,7 +2,6 @@ import logo from './assets/logo.webp';
 import s from './Header.module.css';
 import { ReactComponent as MenuIcon } from './assets/menu-icon.svg';
 import { useState } from 'react';
-import { Link } from 'react-scroll';
 
 const Header = () => {
 

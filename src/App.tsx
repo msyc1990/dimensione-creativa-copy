@@ -7,6 +7,7 @@
  import Statistis from "./pages/Statistics/Statistis";
  import QuoteSection from "./pages/QuoteSection/QuoteSection";
  import MeetTheDuo from "./pages/MeetTheDuo/MeetTheDuo";
+ import OurStories from "./pages/OurStories/OurStories";
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Statistis />
       <QuoteSection />
       <MeetTheDuo />
+      <OurStories />
     </>
   );
 }
