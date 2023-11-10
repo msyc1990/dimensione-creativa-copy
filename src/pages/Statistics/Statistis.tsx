@@ -11,10 +11,10 @@ const Stat = ({stat, caption, className}: StatProps) => {
     return (
         <div className={s.stat}>
             <div className={className}>
-                <p className='text-[6.8rem]'>
+                <p className='text-2l'>
                     {stat}
                 </p>
-                <p className='text-[2.4rem]'>
+                <p className='text-m'>
                     {caption}
                 </p>
             </div>
@@ -29,7 +29,7 @@ const Statistis = () => {
 
         <div className={s.contentContainer}>
             <div className={s.heading}>
-                <p>
+                <p className='text-l'>
                     DC w matematyce
                 </p>
             </div>
@@ -45,7 +45,7 @@ const Statistis = () => {
                                 'https://www.youtube.com/@DimensioneCreativa',
                                 '_blank',
                             )}
-                            className={`${s.btn} border border-red-border`}
+                            className={`${s.btn} border border-red-border hover:bg-red-background hover:shadow-youtube`}
                         >
                             <p>Zobacz nas na Youtube</p>
                         </button>
@@ -55,7 +55,7 @@ const Statistis = () => {
                                 'https://linkedin.com/company/dimensionecreativa',
                                 '_blank',
                             )}
-                            className={`${s.btn} border border-blue-border`}
+                            className={`${s.btn} border border-blue-border hover:bg-blue-background-2 hover:shadow-linkedin`}
                         >
                             <p>Poczytaj o nas na Linkedin</p>
                         </button>

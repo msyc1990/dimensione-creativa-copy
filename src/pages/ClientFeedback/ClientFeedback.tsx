@@ -105,7 +105,7 @@ const ClientFeedback = () => {
   return (
     <section className={s.container}>
         <div className={s.heading}>
-            <p className='font-semibold'>
+            <p className='text-l font-semibold'>
                 Co piszą o nas klienci?
             </p>
         </div>
@@ -135,10 +135,10 @@ const ClientFeedback = () => {
                         {feedbacks[activeComment].feedback}
                     </p>
                     <p>
-                        <span className='font-bold text-black-author'>
+                        <span className='text-m font-bold text-black-author'>
                             {feedbacks[activeComment].author}
                         </span>
-                        <span className='text-purple-author'>
+                        <span className='text-sm text-purple-author'>
                             {feedbacks[activeComment].company}
                         </span>
                         

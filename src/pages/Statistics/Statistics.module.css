@@ -2,6 +2,17 @@
     position: relative;
 }
 
+.gradient {
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 100%;
+    height: 465px;
+    background: linear-gradient(180deg, rgba(1, 0, 20, 0.00) 0.96%, rgba(0, 97, 254, 0.20) 50%, rgba(0, 97, 254, 0.00) 100%);
+    z-index: -1;
+    opacity: 50%;
+}
+
 .contentContainer {
     width: calc(100% * 0.85);
     margin: 3rem auto;

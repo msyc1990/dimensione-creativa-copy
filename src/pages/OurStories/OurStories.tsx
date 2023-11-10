@@ -259,6 +259,15 @@ const OurStories = () => {
             />
           ))}
         </div>
+
+        <a
+          
+          onClick={() => window.open('https://dchouse.pl/prezentacja')}
+          target='_blank'
+          className={`${s.moreStories} text-sm`}
+        >
+          Zobacz więcej historii
+        </a>
     </section>
   )
 }
