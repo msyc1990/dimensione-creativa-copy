@@ -8,6 +8,7 @@
  import QuoteSection from "./pages/QuoteSection/QuoteSection";
  import MeetTheDuo from "./pages/MeetTheDuo/MeetTheDuo";
  import OurStories from "./pages/OurStories/OurStories";
+ import Services from "./pages/Services/Services";
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <QuoteSection />
       <MeetTheDuo />
       <OurStories />
+      <Services />
     </>
   );
 }

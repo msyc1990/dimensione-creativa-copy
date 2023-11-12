@@ -1,0 +1,55 @@
+.container {
+    width: calc(100% * 0.96);
+    margin: 12rem auto;
+    border-radius: 37px;
+    background-color: #fbfbfb;
+    padding: 6rem 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.service {
+    color: black;
+    display: grid;
+    grid-template-columns: auto 2fr 4fr auto;
+    column-gap: 6rem;
+    padding: 2.4rem 0;
+    border-top: 1px solid #c4c4c4;
+    cursor: pointer;
+}
+
+.serviceSummary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.writeStory {
+    position: relative;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    z-index: 0;
+    padding: 0.25rem 1rem;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: max(85px, 28%);
+      border-radius: 10px;
+      background-color: theme(colors.yellow.base);
+      z-index: -1;
+    }
+  }
