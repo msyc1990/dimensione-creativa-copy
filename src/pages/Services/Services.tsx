@@ -1,4 +1,7 @@
-import { Fragment, ReactNode } from 'react';
+import { Fragment, ReactNode, useState } from 'react';
+import { ReactComponent as WriteIcon } from './assets/write.svg';
+import { ReactComponent as NotSelectedIcon } from './assets/not-selected.svg';
+import { ReactComponent as SelectedIcon } from './assets/selected.svg';
 import s from './Services.module.css';
 
 
@@ -9,19 +12,22 @@ interface ServiceProps {
     scope: Array<string>;
 }
 const Service = ({index, description, title, scope}: ServiceProps) => {
+  const [hovered, setHovered] = useState(false);
   return (
     <div
-        className={`${s.service}`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className={`${s.service} ${hovered ? s.hovered : 'text-black-disabled'}`}
     >
         <p className='text-sm font-medium self-center'>{index}</p>
-        <p className='text-sm text-black-text'>
+        <p className='text-sm'>
             {description.map((x, index) => (
                 <Fragment key={index}>{x}</Fragment>
             ))}
         </p>
 
         <div className={s.serviceSummary}>
-            <p className='text-xm'>
+            <p className='text-xxm'>
                 {title}
             </p>
             <ul className='list-disc list-inside text-1.5sm'>
@@ -30,6 +36,8 @@ const Service = ({index, description, title, scope}: ServiceProps) => {
                 ))}
             </ul>
         </div>
+
+        {hovered ? <SelectedIcon /> : <NotSelectedIcon />}
     </div>
   )
 }
@@ -243,6 +251,7 @@ const Services = () => {
             <p className='text-black-text text-sm font-bold tracking-[0.8px] uppercase'>
                 Napiszemy razem tę historię
             </p>
+            <WriteIcon />
         </div>
     </section>
   )

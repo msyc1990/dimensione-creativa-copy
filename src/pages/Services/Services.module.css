@@ -15,13 +15,28 @@
 }
 
 .service {
-    color: black;
     display: grid;
     grid-template-columns: auto 2fr 4fr auto;
     column-gap: 6rem;
     padding: 2.4rem 0;
     border-top: 1px solid #c4c4c4;
     cursor: pointer;
+
+    &.hovered {
+        > p {
+            color: #242424;
+        }
+
+        .serviceSummary {
+             > p {
+                color: #04008a;
+             }
+
+             > ul {
+                color: #2936b7
+             }
+        }
+    }
 }
 
 .serviceSummary {

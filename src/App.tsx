@@ -9,6 +9,9 @@
  import MeetTheDuo from "./pages/MeetTheDuo/MeetTheDuo";
  import OurStories from "./pages/OurStories/OurStories";
  import Services from "./pages/Services/Services";
+ import Testimonial from "./pages/Testmonial/Testimonial";
+ import Advantages from "./pages/Advantages/Advantages";
+ import Technologies from "./pages/Technologies/Technologies";
 
 
 
@@ -26,6 +29,9 @@ function App() {
       <MeetTheDuo />
       <OurStories />
       <Services />
+      <Testimonial />
+      <Advantages />
+      <Technologies />
     </>
   );
 }

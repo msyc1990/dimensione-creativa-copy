@@ -1,0 +1,19 @@
+.container {
+    width: calc(100% * 0.85);
+    margin: 9rem auto;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer {
+    display: flex;
+    gap: 2rem;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
