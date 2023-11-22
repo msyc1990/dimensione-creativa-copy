@@ -1,0 +1,74 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    padding-bottom: 10rem;
+    overflow-x: clip;
+
+    .circles {
+        position: absolute;
+        top: 0;
+        right: 8rem;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 4rem;
+        border-left: 1px solid #c4c4c4;
+        height: 100%;
+    }
+}
+
+.gradient {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 465px;
+    background: linear-gradient(180deg, rgba(1, 0, 20, 0.00) 0.96%, rgba(0, 97, 254, 0.20) 50%, rgba(0, 97, 254, 0.00) 100%);
+    z-index: -1;
+    opacity: 50%;
+}
+
+.heading {
+    width: calc(100% * 0.85);
+    margin: 0 auto;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 4rem;
+        gap: 2rem;
+    }
+}
+
+.points {
+    width: calc(100% * 0.85);
+    margin: 0 auto;
+    padding-left: 2rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.point {
+    position: relative;
+
+    .pointIcon {
+        position: absolute;
+        width: 91px;
+        aspect-ratio: 1 / 1;
+        background-color: #fcdc04;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+    }
+}

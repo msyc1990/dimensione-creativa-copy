@@ -12,6 +12,7 @@
  import Testimonial from "./pages/Testmonial/Testimonial";
  import Advantages from "./pages/Advantages/Advantages";
  import Technologies from "./pages/Technologies/Technologies";
+ import SolutionCreation from "./pages/SolutionCreation/SolutionCreation";
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Testimonial />
       <Advantages />
       <Technologies />
+      <SolutionCreation />
     </>
   );
 }
