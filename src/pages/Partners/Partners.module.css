@@ -1,17 +1,11 @@
 .container {
-    width: calc(100% * 0.85);
+    width: var(--site-content-2-width);
     margin: 10rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 3.5rem;
-
-    > p {
-        font-size: 5.6rem;
-        line-height: 7.6rem;
-        font-weight: 700;
-    }
 }
 
 .logo {

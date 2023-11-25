@@ -1,5 +1,5 @@
 .container {
-    width: calc(100% * 0.96);
+    width: var(--site-content-1-width);
     display: flex;
     padding: 2rem 3rem;
     margin: 0 auto;
@@ -40,7 +40,7 @@
         }
 
         >.link:hover {
-            text-shadow: 0 2px 6px theme(colors.blue.highlight);
+            text-shadow: 0 2px 6px #0c00de;
         }
     }
 

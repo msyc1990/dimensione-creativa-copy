@@ -13,6 +13,7 @@
  import Advantages from "./pages/Advantages/Advantages";
  import Technologies from "./pages/Technologies/Technologies";
  import SolutionCreation from "./pages/SolutionCreation/SolutionCreation";
+ import BuildingProcess from "./pages/BuildingProcess/BuildingProcess";
 
 
 
@@ -34,6 +35,7 @@ function App() {
       <Advantages />
       <Technologies />
       <SolutionCreation />
+      <BuildingProcess />
     </>
   );
 }

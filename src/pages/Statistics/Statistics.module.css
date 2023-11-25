@@ -14,7 +14,7 @@
 }
 
 .contentContainer {
-    width: calc(100% * 0.85);
+    width: var(--site-content-2-width);
     margin: 3rem auto;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
 
     .line {
         position: absolute;
-        border-left: 1px solid theme(colors.white.separator);
+        border-left: 1px solid #c4c4c4;
         border-bottom: none;
     }
 
@@ -67,8 +67,8 @@
 
     > div {
         position: relative;
-        border-left: 1px solid theme(colors.white.separator);
-        border-bottom: 1px solid theme(colors.white.separator);
+        border-left: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
 
     }
 

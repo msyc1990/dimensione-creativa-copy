@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    padding-top: 4.5rem;
+    padding-bottom: 24rem;
+    overflow-x: clip;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 4rem;
+        border-left: 1px solid #c4c4c4;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: calc(100% * 0.96);
+        border-top: 1px solid #c4c4c4;
+    }
+}
+
+.heading {
+    width: calc(100% * 0.85);
+    margin: 0 auto;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 4rem;
+        gap: 2rem;
+    }
+}

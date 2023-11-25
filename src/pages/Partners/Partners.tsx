@@ -25,7 +25,7 @@ const Partners = () => {
     ]
   return (
     <section className={s.container}>
-        <p className='font-bold'>
+        <p className='font-bold text-xm sm:text-l'>
             Partnerzy, klienci, przyjaciele
         </p>
 

@@ -223,8 +223,9 @@ const OurStories = () => {
 
   return (
     <section className={s.container}>
-        <div className={s.heading}>
-          <p className='text-l'>
+      <div className={s.heading}>
+        <div className={s.header}>
+          <p className='text-2xm font-semibold md:text-l'>
             Kodem i kolorem piszemy{' '}
             <span className='text-yellow-footer'>wspaniałe</span> historie...
           </p>
@@ -244,30 +245,31 @@ const OurStories = () => {
             </li>
           </ul>
         </div>
+      </div>
 
-        <div className={s.stories}>
-          {stories.map((story, index) => (
-            <Story
-              key={index}
-              image={story.image}
-              title={story.title}
-              scope={story.scope}
-              type={story.type}
-              client={story.client}
-              className={colors[index % colors.length]}
-              link={story.link}
-            />
-          ))}
-        </div>
+      <div className={s.stories}>
+        {stories.map((story, index) => (
+          <Story
+            key={index}
+            image={story.image}
+            title={story.title}
+            scope={story.scope}
+            type={story.type}
+            client={story.client}
+            className={colors[index % colors.length]}
+            link={story.link}
+          />
+        ))}
+      </div>
 
-        <a
+      <a
           
-          onClick={() => window.open('https://dchouse.pl/prezentacja')}
-          target='_blank'
-          className={`${s.moreStories} text-sm`}
-        >
-          Zobacz więcej historii
-        </a>
+        onClick={() => window.open('https://dchouse.pl/prezentacja')}
+        target='_blank'
+        className={`${s.moreStories} text-sm`}
+      >
+        Zobacz więcej historii
+      </a>
     </section>
   )
 }

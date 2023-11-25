@@ -3,6 +3,28 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+  --site-content-1-width-n: 0.96;
+  --site-content-1-width: calc(100% * var(--site-content-1-width-n));
+  --site-content-1-margin: calc(100% - var(--site-content-1-width));
+  --site-content-1-half-margin: calc(var(--site-content-1-margin) / 2);
+
+  --site-content-2-width-n: 0.85;
+  --site-content-2-width: calc(100% * var(--site-content-2-width-n));
+  --site-content-2-margin: calc(100% - var(--site-content-2-width));
+  --site-content-2-half-margin: calc(var(--site-content-2-margin) / 2);
+
+  --site-heading-margin: 4rem;
+
+  --site-min-width-n: 280;
+  --site-min-width: calc(1px * var(--site-min-width-n));
+
+  --site-max-width-n: 1512;
+  --site-max-width: calc(1px * var(--site-max-width-n));
+
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +48,14 @@ html {
 body {
   background-color: #010014;
   color: #fbfbfb;
-  max-width: 1512px;
-  min-width: 280px;
-  min-height: 100vh;
   margin: 0 auto;
+  max-width: var(--site-max-width);
+  min-width: var(--site-min-width);
+  min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+
 
 
