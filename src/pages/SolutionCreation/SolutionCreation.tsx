@@ -40,7 +40,7 @@ const SolutionCreation = () => {
 
         <div className={s.heading}>
             <div className={s.header}>
-                <p className='text-l font-bold max-w-[1000px]'>
+                <p className='text-2xm  md:text-l font-bold max-w-[1000px]'>
                     Kształtowanie pomysłów i wartości{' '}
                     <span className='text-yellow-footer'>
                         do tworzenia skutecznego rozwiązania

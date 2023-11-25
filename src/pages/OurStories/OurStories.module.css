@@ -1,8 +1,12 @@
 .container {
-    margin: 12rem;
+    margin: 8rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
+
+    @media (max-width: 1024px) {
+        margin: 12rem 1rem;
+    }
 }
 .heading {
     width: var(--site-content-2-width);
@@ -10,17 +14,17 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid #c4c4c4;
 
+    @media (max-width: 768px) {
+        border-bottom: none;
+        width: var(--site-content-1-width);
+    }
+
     ul {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 1rem;
         list-style-position: inside;
-    }
-
-    @media (max-width: 768px) {
-        border-bottom: none;
-        width: var(--site-content-1-width);
     }
 }
 .header {

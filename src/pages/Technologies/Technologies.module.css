@@ -29,6 +29,11 @@
     justify-content: space-between;
     margin: 0 4rem;
     gap: 2rem;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .gradient {
@@ -43,10 +48,17 @@
 
 .categories {
     position: relative;
-    width: calc(100% * 0.85);
+    width: var(--site-content-2-width);
     margin: 0 auto;
     display: flex;
-    left: -7.5rem;
+    left: -4.5rem;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        left: unset;
+        margin-left: calc(1rem + var(--site-content-1-half-margin));
+        width: calc(var(--site-content-1-width) - 1rem);
+    }
 
     > :first-child {
         z-index: 10;
@@ -56,12 +68,20 @@
         position: relative;
         z-index: 11;
         left: -2rem;
+
+        @media (max-width: 1000px) {
+            left: unset;
+        }
     }
 
     > :nth-child(3) {
         position: relative;
         z-index: 12;
         left: -4rem;
+
+        @media (max-width: 1000px) {
+            left: unset;
+        }
     }
 
 }
@@ -70,6 +90,11 @@
     border-radius: 35px;
     display: flex;
     min-height: 500px;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        min-height: unset;
+    }
 }
 
 .categoryHeader {
@@ -82,12 +107,25 @@
     gap: 4rem;
     cursor: pointer;
     padding: 4rem;
+
+    @media (max-width: 1000px) {
+        writing-mode: unset;
+        transform: unset;
+        width: 100%;
+        height: var(--header-height);
+        padding: 3rem;
+        gap: 2rem;
+      }
 }
 
 .categoryContent {
     padding: 10rem 5rem;
     align-self: flex-start;
     overflow: hidden;
+
+    @media (max-width: 1000px) {
+        padding: 2rem 4rem 5rem 4rem;
+    }
 
     > div {
         display: flex;

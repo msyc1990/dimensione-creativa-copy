@@ -27,7 +27,7 @@ const Service = ({index, description, title, scope}: ServiceProps) => {
         </p>
 
         <div className={s.serviceSummary}>
-            <p className='text-xxm'>
+            <p className='text-xm md:text-xxm'>
                 {title}
             </p>
             <ul className='list-disc list-inside text-1.5sm'>

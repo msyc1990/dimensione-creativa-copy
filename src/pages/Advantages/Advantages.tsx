@@ -77,7 +77,7 @@ const Advantages = () => {
   return (
     <div className={s.wrapper}>
       <div className={s.container}>
-        <p className='text-xxl font-bold tracking-[6px]'>
+        <p className='text-l md:text-xxl font-bold tracking-[6px]'>
           <span>N</span>A<span>SZ</span>E <span>P</span>R<span>ZE</span>WAG
           <span>I</span>
         </p>
