@@ -37,3 +37,42 @@
         gap: 2rem;
     }
 }
+
+.slider {
+    width: var(--site-content-2-width);
+    margin: 20rem auto 15rem auto;
+    padding-left: 2rem;
+    display: flex;
+    gap: 10rem;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    > :first-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.slide {
+    opacity: 0;
+    transition: .3s ease-in-out;
+    > img {
+        max-width: 480px;
+    }
+}
+
+.slide.active {
+    opacity: 1;
+}
