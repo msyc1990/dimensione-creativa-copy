@@ -14,6 +14,7 @@
  import Technologies from "./pages/Technologies/Technologies";
  import SolutionCreation from "./pages/SolutionCreation/SolutionCreation";
  import BuildingProcess from "./pages/BuildingProcess/BuildingProcess";
+ import Socials from "./pages/Socials/Socials";
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Technologies />
       <SolutionCreation />
       <BuildingProcess />
+      <Socials />
     </>
   );
 }

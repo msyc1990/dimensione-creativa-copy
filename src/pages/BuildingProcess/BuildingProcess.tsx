@@ -2,8 +2,11 @@ import Slide1 from './assets/slide-1.webp';
 import Slide2 from './assets/slide-2.webp';
 import Slide3 from './assets/slide-3.webp';
 import Slide4 from './assets/slide-4.webp';
+import Quote from '../Quote/Quote';
 import { useState } from 'react';
 import s from './BuildingProcess.module.css';
+import { useLottie } from 'lottie-react';
+import quoteLottie from './assets/quote-image.json';
 
 const BuildingProcess = () => {
     const [currentSlide, setcurrentSlide] = useState(0)
@@ -38,6 +41,13 @@ const BuildingProcess = () => {
       const handleSlide = () => {
         setcurrentSlide(currentSlide === length -1 ? 0 : currentSlide + 1);
       }
+
+      const options = {
+        animationData: quoteLottie,
+        loop: true,
+      };
+    
+      const { View: qLottie } = useLottie(options);
   return (
     <div className={s.container}>
         <div className={s.heading}>
@@ -78,6 +88,16 @@ const BuildingProcess = () => {
                     <p className='text-m'>{slides[currentSlide].description}</p>
                 </div>
             </div>
+        </div>
+
+        <div className={s.quote}>
+            <Quote
+                className='max-w-[900px]'
+                quote='Miarą sukcesu jest ciężka praca. Nie ma drogi na skróty, lecz do każdej wycieczki trzeba przygotować odpowiednie narzędzia. To narzędzia i umysł mogą Tobie usprawnić i przyspieszyć dotarcie do mety.'
+                author='Artur Jaźwiec'
+                position='Dimensione Creativa'
+            />
+            {qLottie}
         </div>
     </div>
   )
